@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+      
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto">
+            <nav class="flex justify-between">
+                <div>
+                    <select name="" id="">
+                        <option value="">ENGLISH</option>
+                        <option value="">SPANISH</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">USD</option>
+                        <option value="">UZS</option>
+                    </select>
+                </div>
+                <div class="flex gap-[20px]">
+                    <p class="flex items-center">
+                        <i class="bx bx-user" style="color: #000"></i>my profile
+                    </p>
+                    <p class="flex items-center">
+                        <i id="cart-page" class="bx bx-cart"></i>items
+                    </p>
+                    <p>my profile</p>
+                    <p class="flex items-center">
+                        <span class="font-light">0.000$</span><i class="bx bx-search"></i>
+                    </p>
+                </div>
+            </nav>
+            <div class="navbar flex items-center justify-between pt-[20px] pb-[20px] backdrop-filter-blur-[10px] z-10">
+                <img src="./images/logo.png" alt="Logo" />
+                <ul class="flex gap-[140px]">
+                    <li class="hover:text-[#BCDDFE]">HOME</li>
+                    <li class="hover:text-[#BCDDFE]">BAGS</li>
+                    <li class="hover:text-[#BCDDFE]">SNEAKERS</li>
+                    <li class="hover:text-[#BCDDFE]">BELT</li>
+                    <li class="hover:text-[#BCDDFE]">CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="mb-[30px] h-[130vh]">
+        <div class="relative w-full overflow-hidden">
+            <div id="slider" class="flex transition-transform duration-500">
+                <div class="relative w-full flex-none">
+                    <img src="./images/orqafon.png" alt="Image 1" class="w-full h-auto" />
+                </div>
+                <div class="relative w-full flex-none">
+                    <img src="./images/orqafon.png" alt="Image 2" class="w-full h-auto" />
+                </div>
+                <div class="relative w-full flex-none">
+                    <img src="./images/orqafon.png" alt="Image 3" class="w-full h-auto" />
+                </div>
+            </div>
+        </div>
+
+        <div class="cards flex w-[100%] justify-center absolute">
+            <div class="card w-[300px] h-[364px] relative top-[-100px] mx-auto bg-slate-200 p-[20px]">
+                <h2 class="text-[#223263] font-bold">
+                    FS - QUILTED MAXI <br />CROSS BAG
+                </h2>
+                <img src="./images/sumka.png" alt="Bag Image" />
+                <p>
+                    <del>$534,33 </del><span class="text-red-600 font-bold">24% Off</span>
+                </p>
+                <p class="font-extrabold text-3xl text-end text-[#40BFFF]">
+                    <sup><span class="text-[20px]"><span class="font-extrabold text-3xl">$</span>2</span></sup>
+                    99,43
+                </p>
+            </div>
+            <div class="card w-[300px] h-[364px] relative top-[-100px] mx-auto bg-slate-200 p-[20px]">
+                <div class="flex justify-between">
+                    <span class="text-[#223263] font-bold w-[130px]">
+                        FS - Nike-Air MAXI CROSS BAG
+                    </span>
+                    <span class="font-extrabold text-3xl text-end text-[#40BFFF]">
+                        <sup><span class="text-[20px]"><span class="font-extrabold text-3xl">$</span>2</span></sup>
+                        99,43
+                    </span>
+                </div>
+                <img src="./images/img.png" alt="Nike Bag" />
+                <p>
+                    <del>$534,33 </del><span class="text-red-600 font-bold">24% Off</span>
+                </p>
+            </div>
+            <div class="card w-[300px] h-[364px] relative top-[-100px] mx-auto bg-slate-200 p-[20px]">
+                <h2 class="text-[#223263] font-bold">
+                    FS - QUILTED MAXI <br />CROSS BAG
+                </h2>
+                <p>
+                    <del>$534,33 </del><span class="text-red-600 font-bold">24% Off</span>
+                </p>
+                <img src="./images/img2.png" alt="Bag Image 2" />
+                <p class="font-extrabold text-3xl text-end text-[#40BFFF]">
+                    <sup><span class="text-[20px]"><span class="font-extrabold text-3xl">$</span>2</span></sup>
+                    99,43
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <h1 class="text-center text-4xl font-bold ">BEST SELLERS</h1>
+             
+            <div class="container mx-auto p-8">
+                
+                <div id="category-container" class=""></div>
+                <div id="product-container" class="grid grid-cols-3 "></div>
+            </div>
+
+        </div>
+        
+        
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="relative">
+               
+              
+                <!-- Modal Background -->
+                <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+                  <!-- Modal Content -->
+                  <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
+                    <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
+                    <p class="mb-4">This is the modal content. You can add any text or HTML elements here.</p>
+                    <button id="closeModal" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                      Close Modal
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </section>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+
+</html>
