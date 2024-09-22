@@ -1,4 +1,3 @@
-
 export const fetchCategories = async () => {
     try {
         const response = await fetch('https://fakestoreapi.com/products/categories');
@@ -6,8 +5,10 @@ export const fetchCategories = async () => {
         return categories;
     } catch (error) {
         console.error('Xatolik yuz berdi:', error);
+        return []; // Xato bo'lganda bo'sh array qaytaradi
     }
 };
+
 export const fetchProducts = async () => {
     try {
         const response = await fetch('https://fakestoreapi.com/products');
@@ -15,8 +16,9 @@ export const fetchProducts = async () => {
         return products;
     } catch (error) {
         console.error('Xatolik yuz berdi:', error);
-        return [];  // Xato bo'lganda bo'sh array qaytaradi
+        return []; // Xato bo'lganda bo'sh array qaytaradi
     }
 };
+
 
 

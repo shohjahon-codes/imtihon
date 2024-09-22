@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100">
+    <header>
+        <div class="container mx-auto">
+            <nav class="flex justify-between">
+                <div>
+                    <select name="" id="">
+                        <option value="">ENGLISH</option>
+                        <option value="">SPANISH</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">USD</option>
+                        <option value="">UZS</option>
+                    </select>
+                </div>
+                <div class="flex gap-[20px]">
+                    <p class="flex items-center">
+                        <i class="bx bx-user" style="color: #000"></i>my profile
+                    </p>
+                    <p class="flex items-center">
+                        <i id="cart-page" class="bx bx-cart"></i>items
+                    </p>
+                    <p>my profile</p>
+                    <p class="flex items-center">
+                        <span class="font-light">0.000$</span><i class="bx bx-search"></i>
+                    </p>
+                </div>
+            </nav>
+            <div class="navbar flex items-center justify-between pt-[20px] pb-[20px] backdrop-filter-blur-[10px] z-10">
+                <img src="./images/logo.png" alt="Logo" />
+                <ul class="flex gap-[140px]">
+                    <li class="hover:text-[#BCDDFE]">HOME</li>
+                    <li class="hover:text-[#BCDDFE]">BAGS</li>
+                    <li class="hover:text-[#BCDDFE]">SNEAKERS</li>
+                    <li class="hover:text-[#BCDDFE]">BELT</li>
+                    <li class="hover:text-[#BCDDFE]">CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div id="cart-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+        <!-- Umumiy qiymat va Buyurtma berish tugmasi -->
+        <div class="mt-8 p-4 bg-white shadow-md rounded-lg text-center">
+            <h2 class="text-2xl font-semibold mb-4">Total: <span id="total-price" class="text-green-500">$0.00</span></h2>
+            <button id="checkout-btn" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300">
+                Place Order
+            </button>
+        </div>
+    </main>
+    <footer class="bg-[#BCDDFE] text-black py-8 h-[50vh]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 text-center">
+            <div class="mb-4">
+               <img src="./images/logo.png" alt="">
+                <p class="text-sm text-left w-[220px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+            </div>
+            <div class="mt-[10px]">
+                <h3 class="text-lg text-left font-semibold">Follow us</h3>
+                <p class="text-sm text-left w-[200px]">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                <h1 class="text-lg text-left ">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter text-[#47afef]'></i>
+                </h1>
+
+            </div>
+            <div class="mb-4 w-[150px]">
+                <h3 class="text-lg text-left font-semibold">contact us</h3>
+                <p class="text-sm text-left">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+            </div>
+        </div>
+        <div class="text-center relative mt-4">
+            <p class="text-right absolute right-0"><img src="./images/to'lovtizim.png" alt=""></p>
+        </div>
+    </footer> 
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>
+
+

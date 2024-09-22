@@ -112,42 +112,69 @@
             </div>
         </div>
     </section>
-
+    
+    
     <section>
         <div class="container">
-
+            
             <h1 class="text-center text-4xl font-bold ">BEST SELLERS</h1>
-             
+            
             <div class="container mx-auto p-8">
                 
-                <div id="category-container" class=""></div>
-                <div id="product-container" class="grid grid-cols-3 "></div>
+                <div id="category-buttons" class="mb-4 flex justify-center">
+                   
+                </div>
+                <div id="category-container" class="= mb-6 gap-[10px]"></div> <!-- Bu yerda kategoriyalar chiqadi -->
+                <div id="product-container"></div>
+
             </div>
 
         </div>
         
         
     </section>
-    <section>
-        <div class="container mx-auto">
-            <div class="relative">
-               
-              
-                <!-- Modal Background -->
-                <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
-                  <!-- Modal Content -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
-                    <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
-                    <p class="mb-4">This is the modal content. You can add any text or HTML elements here.</p>
-                    <button id="closeModal" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                      Close Modal
-                    </button>
-                  </div>
-                </div>
-              </div>
-              
+  
+   
+     <section >
+        <div class="container mx-auto my-[40px]">
+            <div class="flex justify-evenly items-center gap-[30px]">
+               <div class="icon"><img  class="p-[20px]" src="./images/shipping.png" alt="rasm">FREE SHIPPING</div>
+               <div class="icon"><img class="p-[20px]" src="./images/refund.png" alt="rasm">100% REFOUND</div>
+               <div class="icon"><img class="p-[20px]" src="./images/support.png" alt="rasm">24/7 SUPPORT</div>
+            </div>
         </div>
-    </section>
+         <div class=" container  mx-auto flex justify-center mb-[30px]">
+           <div class="flex justify-between w-[635px] h-[65px] border-[1px] border-solid border-[#40BFFF]">
+            <input class="border-[none]w-[400px]" type="search" placeholder="Search query">
+            <button class="w-[130px] h-[100%] bg-[#40BFFF] text-white">search</button>
+           </div>
+         </div>
+     </section>
+     <footer class="bg-[#BCDDFE] text-black py-8 h-[50vh]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 text-center">
+            <div class="mb-4">
+               <img src="./images/logo.png" alt="">
+                <p class="text-sm text-left w-[220px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+            </div>
+            <div class="mt-[10px]">
+                <h3 class="text-lg text-left font-semibold">Follow us</h3>
+                <p class="text-sm text-left w-[200px]">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                <h1 class="text-lg text-left ">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter text-[#47afef]'></i>
+                </h1>
+
+            </div>
+            <div class="mb-4 w-[150px]">
+                <h3 class="text-lg text-left font-semibold">contact us</h3>
+                <p class="text-sm text-left">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+            </div>
+        </div>
+        <div class="text-center relative mt-4">
+            <p class="text-right absolute right-0"><img src="./images/to'lovtizim.png" alt=""></p>
+        </div>
+    </footer> 
+    
 
     <script type="module" src="./js/script.js"></script>
 </body>
